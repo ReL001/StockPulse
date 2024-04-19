@@ -12,25 +12,36 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  oauth-client-id="INSERT_OAUTH_CLIENT_ID"
-  project-id="skilled-torus-420601"
-  agent-id="d05dccac-6432-4b02-af8b-7d4aed52e402"
-  language-code="en"
-  max-query-length="-1">
-  <df-messenger-chat-bubble
-   chat-title="Agent Apr 19, 2024, 4:44:29 PM">
-  </df-messenger-chat-bubble>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-  }
-</style>
+  <!-- 
+    This code includes a script and HTML markup for integrating the Dialogflow Messenger into a web page.
+    The Dialogflow Messenger is a chat interface that allows users to interact with a Dialogflow agent.
+    It requires the following attributes to be set:
+      - oauth-client-id: The OAuth client ID for authentication.
+      - project-id: The ID of the Dialogflow project.
+      - agent-id: The ID of the Dialogflow agent.
+      - language-code: The language code for the agent's responses.
+      - max-query-length: The maximum length of user queries (-1 for unlimited).
+    The code also includes some CSS styling to position the messenger chat bubble on the page.
+  -->
+<!-- <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <df-messenger
+    oauth-client-id="INSERT_OAUTH_CLIENT_ID"
+    project-id="skilled-torus-420601"
+    agent-id="d05dccac-6432-4b02-af8b-7d4aed52e402"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble
+      chat-title="Agent Apr 19, 2024, 4:44:29 PM">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>-->
 
 </head>
 
@@ -45,8 +56,7 @@
       <div class="logo">
         <i class="fas fa-chart-line fa-3x"></i>
         <h1>Stock<span>Pulse</span></h1>
-      </div
-
+      </div>
       <div class="options">
         <a href="#" class="current">Home</a>
         <a href="./about.html">About</a>
@@ -63,7 +73,10 @@
         <p>
           Get the latest updates on stocks, market trends, and analysis to make informed investment decisions.
         </p>
-        <a href="./article.html">Read More</a>
+        <div id="search-area">
+          <input type="text" id="stock-input" placeholder="Enter Stock Name" aria-label="Stock Name">
+          <button onclick="searchStock()">Search</button>
+        </div>
       </div>
     </div>
   </header>
@@ -72,87 +85,36 @@
     <div class="container">
       <h1 class="editor-h1">Editor Picks</h1>
       <div class="articles">
-        <a href="./article.html" class="card">
-          <img src="./images/stocks/stock1.jpg" alt="">
-          <article>
-            <p class="stock-category">Stocks</p>
-            <h1>Top Stocks to Watch This Month</h1>
-            <p>
-              Discover the top stocks with potential for growth and high returns in the current market.
-            </p>
-          </article>
-        </a>
-
-        <!-- Add more editor picks -->
-
+        <!-- Editor picks content -->
       </div>
     </div>
-
-
   </section>
 
   <section class="categories">
     <div class="container">
       <h1 class="editor-h1">Categories</h1>
       <div class="categories-container">
-        <a href="./category.html" class="category">
-          <i class="fas fa-chart-line fa-4x"></i>
-          <p>Stocks</p>
-        </a>
-        <a href="./category.html" class="category">
-          <i class="fas fa-dollar-sign fa-4x"></i>
-          <p>Finance</p>
-        </a>
-        <a href="./category.html" class="category">
-          <i class="fas fa-globe fa-4x"></i>
-          <p>Global Markets</p>
-        </a>
-        <!-- Add more categories -->
-
+        <!-- Categories content -->
       </div>
     </div>
-        
   </section>
 
   <footer>
-    <div class="container">
-      <div class="footer">
-        <article>
-          <div class="logo">
-            <i class="fas fa-chart-line fa-2x"></i>
-            <h2>Stock<span>Pulse</span></h2>
-          </div>
-          <p>
-            Stay updated with the latest news and analysis on stocks and financial markets.
-          </p>
-        </article>
-
-        <article>
-          <h4>NEWSLETTER</h4>
-          <p>Subscribe to our newsletter to receive updates on the latest trends and investment opportunities.</p>
-          <input type="email" placeholder="Enter Email...">
-          <button>Subscribe</button>
-        </article>
-
-        <article>
-          <h4>USEFUL LINKS</h4>
-          <p>Help & Support</p>
-          <p>Privacy Policy</p>
-          <p>About Us</p>
-          <p>Contact</p>
-        </article>
-
-        <!-- Add more sections -->
-
-      </div>
-
-      <div class="copyright">
-        <p>Copyright &copy; 2024, Stock Pulse. All Rights Reserved.</p>
-      </div>
-    </div>
+    <!-- Footer content -->
   </footer>
 
   <script src="./js/script.js"></script>
+  <script>
+    function searchStock() {
+      var stockName = document.getElementById('stock-input').value.trim();
+      if (stockName) {
+        console.log("Search for:", stockName);
+        // Integrate API call or further processing here
+      } else {
+        alert("Please enter a stock name to search.");
+      }
+    }
+  </script>
 </body>
 
 </html>
