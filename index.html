@@ -11,7 +11,27 @@
     integrity="sha512-oIYT35X1eHTaFsxHAcC2/Oa5O+U+31CfTiE8/dRlGg7rjGmzimIwt94g3PWwV6cQU3oVk5T0mKGRK3kzw0zxcw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
-  
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  oauth-client-id="INSERT_OAUTH_CLIENT_ID"
+  project-id="skilled-torus-420601"
+  agent-id="d05dccac-6432-4b02-af8b-7d4aed52e402"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="Agent Apr 19, 2024, 4:44:29 PM">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+
 </head>
 
 <body>
@@ -25,8 +45,7 @@
       <div class="logo">
         <i class="fas fa-chart-line fa-3x"></i>
         <h1>Stock<span>Pulse</span></h1>
-      </div>
-
+      </div
 
       <div class="options">
         <a href="#" class="current">Home</a>
@@ -68,6 +87,8 @@
 
       </div>
     </div>
+
+
   </section>
 
   <section class="categories">
@@ -90,28 +111,8 @@
 
       </div>
     </div>
+        
   </section>
-  <!-- Add a chatbot section -->
-  <section class="chatbot">
-    <div class="container">
-      <div class="chatbot-container">
-        <div class="chatbot-header">
-          <h2>Chatbot</h2>
-          <p>Ask me anything about stocks, markets, or investment strategies.</p>
-        </div>
-        <div class="chatbot-body">
-          <div class="chatbot-messages">
-            <!-- Add chatbot messages here -->
-          </div>
-          <div class="chatbot-input">
-            <input type="text" placeholder="Type your question here...">
-            <button>Send</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
 
   <footer>
     <div class="container">
