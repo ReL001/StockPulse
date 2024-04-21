@@ -32,65 +32,7 @@ a {
   color: inherit;
 }
 
-/* Navbar */
-nav {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo h1 {
-  font-family: var(--headings-font);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-left: 10px;
-}
-
-.logo i {
-  color: var(--primary-color);
-}
-
-.social {
-  display: flex;
-}
-
-.social a {
-  margin-right: 15px;
-  color: var(--dark-color);
-}
-
-.social a:hover {
-  color: var(--primary-color);
-}
-
-.options a {
-  margin-left: 20px;
-  color: var(--dark-color);
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.options a:hover {
-  color: var(--primary-color);
-}
-
-.current {
-  color: var(--primary-color);
-}
 
 /* Showcase */
 .showcase {
@@ -119,7 +61,7 @@ nav .container {
 .showcase a {
   display: inline-block;
   background-color: var(--primary-color);
-  color: #fff;
+  color: #e50a0a78;
   padding: 10px 20px;
   font-weight: 500;
   border-radius: 25px;
@@ -326,7 +268,7 @@ footer {
 #search-area button {
   padding: 10px 20px;
   background-color: var(--primary-color);
-  color: white;
+  color: rgb(138, 139, 158);
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -361,4 +303,116 @@ footer {
 
 #search-area button:hover {
   background-color: #0056b3;
+}
+.nav-menu {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+
+footer {
+  position: relative; /* or 'absolute' if you want it always at the bottom */
+}
+
+
+    .flex-options{
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 20px;
+      color: var(--dark-color);
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+/* Style for the navigation bar */
+nav {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Add some padding */
+}
+
+.container0 {
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  color: #ffd700; /* Icon color */
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.logo h1 {
+  font-size: 24px; /* Font size */
+}
+
+.logo h1 span {
+  color: #ffd700; /* Text color for 'Pulse' */
+}
+
+.flex-options {
+  display: flex;
+}
+
+.flex-options a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 0 15px; /* Add padding */
+  transition: color 0.5s; /* Smooth color transition */
+}
+
+.flex-options a:hover {
+  color: #ffd700; /* Change text color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container0 {
+    padding: 0 20px; /* Add padding to the container */
+  }
+
+  .logo h1 {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+
+  .flex-options {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column; /* Change flex direction for smaller screens */
+    position: absolute; /* Position links absolutely */
+    top: 60px; /* Position links below the navigation bar */
+    left: 0;
+    background-color: #333; /* Dark background color */
+    width: 100%;
+  }
+
+  .flex-options a {
+    padding: 10px 0; /* Add padding to each link */
+    border-bottom: 1px solid #fff; /* Add a border between links */
+  }
+
+  /* Show navigation links when the navigation icon is clicked */
+  nav .menu-icon:checked + .container0 .flex-options {
+    display: flex;
+  }
 }
