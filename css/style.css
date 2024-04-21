@@ -81,51 +81,6 @@ a {
   }
   
 
-/* Editor Picks */
-.editor-picks {
-  margin-top: 50px;
-}
-
-.editor-picks h2 {
-  font-family: var(--headings-font);
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.articles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
 /* Categories */
 .categories2 {
   background-color: #f9f9f9; /* Background color */
@@ -140,6 +95,8 @@ a {
 .editor-h1 {
   text-align: center; /* Center align the heading */
   margin-bottom: 30px; /* Add space below the heading */
+  font-size: 36px; /* Increase font size for the heading */
+  color: #333; /* Heading text color */
 }
 
 .collections-container {
@@ -153,19 +110,29 @@ a {
   padding: 20px; /* Add padding */
   border-radius: 10px; /* Add border radius */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a card-like effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition effect */
+}
+
+.category:hover {
+  transform: translateY(-5px); /* Add slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
 
 .category h2 {
   font-size: 24px; /* Font size for category titles */
-  margin-bottom: 10px; /* Add space below category titles */
+  margin-bottom: 15px; /* Add slightly more space below category titles */
+  color: #333; /* Text color */
 }
 
 .category p {
   font-size: 16px; /* Font size for category descriptions */
+  color: #666; /* Text color */
+  line-height: 1.5; /* Increase line height for better readability */
 }
 
 
-/* Footer */
+
+/* Footer styles */
 footer {
   background-color: #333; /* Footer background color */
   color: #fff; /* Text color */
@@ -213,6 +180,8 @@ footer {
   font-size: 16px; /* Font size */
   border: none; /* Remove border */
   border-radius: 5px; /* Add border radius */
+  background-color: #444; /* Input background color */
+  color: #fff; /* Input text color */
 }
 
 .newsletter-form button {
@@ -223,10 +192,11 @@ footer {
   background-color: #ffd700; /* Button background color */
   color: #333; /* Button text color */
   cursor: pointer; /* Add pointer cursor */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 .newsletter-form button:hover {
-  background-color: #333; /* Change background color on hover */
+  background-color: #444; /* Change background color on hover */
   color: #fff; /* Change text color on hover */
 }
 
@@ -261,6 +231,7 @@ footer {
   text-align: center; /* Center align copyright text */
   margin-top: 30px; /* Add space above copyright text */
 }
+
 
 
 /* Responsive */
