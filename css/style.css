@@ -34,43 +34,52 @@ a {
 
 
 
-/* Showcase */
+/* Showcase container */
 .showcase {
-  position: relative;
-  height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/stock-tradingBackground.jpg") center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-}
-
-.showcase h1 {
-  font-family: var(--headings-font);
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.showcase p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.showcase a {
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: #e50a0a78;
-  padding: 10px 20px;
-  font-weight: 500;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-}
-
-.showcase a:hover {
-  background-color: #0056b3; /* Darker shade of primary color */
-}
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center align text */
+  }
+  
+  .text-content {
+    color: #fff; /* Text color */
+  }
+  
+  .text-content h1 {
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  .text-content p {
+    font-size: 18px; /* Font size for the paragraph */
+    margin-bottom: 30px; /* Add space below the paragraph */
+  }
+  
+  button {
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    background-color: #ffd700; /* Button background color */
+    color: #333; /* Button text color */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
 
 /* Editor Picks */
 .editor-picks {
@@ -118,96 +127,141 @@ a {
 }
 
 /* Categories */
-.categories {
-  margin-top: 50px;
+.categories2 {
+  background-color: #f9f9f9; /* Background color */
+  padding: 50px 0; /* Add padding */
 }
 
-.categories h2 {
-  font-family: var(--headings-font);
-  font-size: 2rem;
-  margin-bottom: 20px;
+.container2 {
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
 }
 
-.categories-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+.editor-h1 {
+  text-align: center; /* Center align the heading */
+  margin-bottom: 30px; /* Add space below the heading */
+}
+
+.collections-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 30px; /* Add space between grid items */
 }
 
 .category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  background-color: #fff; /* Background color for each category */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a card-like effect */
 }
 
-.category:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.category i {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+.category h2 {
+  font-size: 24px; /* Font size for category titles */
+  margin-bottom: 10px; /* Add space below category titles */
 }
 
 .category p {
-  font-size: 1.2rem;
+  font-size: 16px; /* Font size for category descriptions */
 }
+
 
 /* Footer */
 footer {
-  background-color: var(--dark-color);
-  color: #fff;
-  padding: 50px 0;
-  margin-top: 50px;
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 50px 0; /* Add padding */
+}
+
+.footer-container {
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.footer h3 {
-  font-family: var(--headings-font);
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.footer article {
+  flex: 1;
+  margin-right: 20px; /* Add space between articles */
+  margin-bottom: 20px; /* Add space between articles */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 24px; /* Font size for the logo */
+  margin-left: 10px; /* Add space between icon and text */
+}
+
+.logo span {
+  color: #ffd700; /* Text color for 'Pulse' */
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1; /* Take up remaining space */
+  padding: 10px; /* Add padding */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+}
+
+.newsletter-form button {
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  background-color: #ffd700; /* Button background color */
+  color: #333; /* Button text color */
+  cursor: pointer; /* Add pointer cursor */
+}
+
+.newsletter-form button:hover {
+  background-color: #333; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+.footer h4 {
+  font-size: 20px; /* Font size for section titles */
+  margin-bottom: 10px; /* Add space below section titles */
 }
 
 .footer p {
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 16px; /* Font size for paragraphs */
 }
 
-.footer input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+.footer ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default list padding */
 }
 
-.footer button {
-  display: block;
-  width: 100%;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.footer ul li {
+  margin-bottom: 5px; /* Add space between list items */
 }
 
-.footer button:hover {
-  background-color: #0056b3; /* Darker shade of primary color */
+.footer ul li a {
+  color: #fff; /* Link text color */
+  text-decoration: none; /* Remove underline */
 }
+
+.footer ul li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.footer .copyright {
+  text-align: center; /* Center align copyright text */
+  margin-top: 30px; /* Add space above copyright text */
+}
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
