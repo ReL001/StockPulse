@@ -1,3 +1,6 @@
+
+// Serarch for news articles related to a stock and display them on the page
+
 document.addEventListener("DOMContentLoaded", function() {
   // Example: Adding functionality to the navigation toggle button
   const navToggle = document.querySelector(".nav-toggle");
@@ -87,3 +90,5 @@ function displayNews(articles) {
     newsContainer.appendChild(articleElement);
   });
 }
+
+// Trending Stocks Names display
