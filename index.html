@@ -12,36 +12,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-  <!-- 
-    This code includes a script and HTML markup for integrating the Dialogflow Messenger into a web page.
-    The Dialogflow Messenger is a chat interface that allows users to interact with a Dialogflow agent.
-    It requires the following attributes to be set:
-      - oauth-client-id: The OAuth client ID for authentication.
-      - project-id: The ID of the Dialogflow project.
-      - agent-id: The ID of the Dialogflow agent.
-      - language-code: The language code for the agent's responses.
-      - max-query-length: The maximum length of user queries (-1 for unlimited).
-    The code also includes some CSS styling to position the messenger chat bubble on the page.
-  -->
-<!-- <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-  <df-messenger
-    oauth-client-id="INSERT_OAUTH_CLIENT_ID"
-    project-id="skilled-torus-420601"
-    agent-id="d05dccac-6432-4b02-af8b-7d4aed52e402"
-    language-code="en"
-    max-query-length="-1">
-    <df-messenger-chat-bubble
-      chat-title="Agent Apr 19, 2024, 4:44:29 PM">
-    </df-messenger-chat-bubble>
-  </df-messenger>
-  <style>
-    df-messenger {
-      z-index: 999;
-      position: fixed;
-      bottom: 16px;
-      right: 16px;
-    }
-  </style>-->
 
 </head>
 
@@ -80,17 +50,8 @@
     </div>
   </header>
 
-  <!-- Editor picks content -->
-  <!-- <section>
-    <div class="container1">
-      <h1 class="editor-h1">Editor Picks</h1>
-      <div class="articles">
-        
-      </div>
-    </div>
-  </section> -->
+  <div id="news-articles"></div>
 
-  <!-- Categories -->
 
   <section class="categories2 top-gainers">
     <div class="container2">
@@ -181,17 +142,6 @@
   
 
   <script src="./js/script.js"></script>
-  <script>
-    function searchStock() {
-      var stockName = document.getElementById('stock-input').value.trim();
-      if (stockName) {
-        console.log("Search for:", stockName);
-        // Integrate API call or further processing here
-      } else {
-        alert("Please enter a stock name to search.");
-      }
-    }
-  </script>
 </body>
 
 </html>
