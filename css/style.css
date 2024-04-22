@@ -32,20 +32,128 @@ a {
   color: inherit;
 }
 
-/* Navbar */
-nav {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+
+
+/* Showcase container */
+.showcase {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/stock-tradingBackground.jpg") center/cover;
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center align text */
+  }
+  
+  .text-content {
+    color: #fff; /* Text color */
+  }
+  
+  .text-content h1 {
+    font-size: 36px; /* Font size for the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  .text-content p {
+    font-size: 18px; /* Font size for the paragraph */
+    margin-bottom: 30px; /* Add space below the paragraph */
+  }
+  
+  button {
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    background-color: #ffd700; /* Button background color */
+    color: #333; /* Button text color */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+  }
+  
+
+/* Categories */
+.categories2 {
+  background-color: #f9f9f9; /* Background color */
+  padding: 50px 0; /* Add padding */
 }
 
-nav .container {
+.container2 {
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
+}
+
+.editor-h1 {
+  text-align: center; /* Center align the heading */
+  margin-bottom: 30px; /* Add space below the heading */
+  font-size: 36px; /* Increase font size for the heading */
+  color: #333; /* Heading text color */
+}
+
+.collections-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 30px; /* Add space between grid items */
+}
+
+.category {
+  background-color: #fff; /* Background color for each category */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for a card-like effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition effect */
+}
+
+.category:hover {
+  transform: translateY(-5px); /* Add slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.category h2 {
+  font-size: 24px; /* Font size for category titles */
+  margin-bottom: 15px; /* Add slightly more space below category titles */
+  color: #333; /* Text color */
+}
+
+.category p {
+  font-size: 16px; /* Font size for category descriptions */
+  color: #666; /* Text color */
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+
+
+/* Footer styles */
+footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 50px 0; /* Add padding */
+}
+
+.footer-container {
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
+}
+
+.footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.footer article {
+  flex: 1;
+  margin-right: 20px; /* Add space between articles */
+  margin-bottom: 20px; /* Add space between articles */
 }
 
 .logo {
@@ -53,219 +161,78 @@ nav .container {
   align-items: center;
 }
 
-.logo h1 {
-  font-family: var(--headings-font);
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-left: 10px;
+.logo h2 {
+  font-size: 24px; /* Font size for the logo */
+  margin-left: 10px; /* Add space between icon and text */
 }
 
-.logo i {
-  color: var(--primary-color);
+.logo span {
+  color: #ffd700; /* Text color for 'Pulse' */
 }
 
-.social {
+.newsletter-form {
   display: flex;
 }
 
-.social a {
-  margin-right: 15px;
-  color: var(--dark-color);
+.newsletter-form input[type="email"] {
+  flex: 1; /* Take up remaining space */
+  padding: 10px; /* Add padding */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  background-color: #444; /* Input background color */
+  color: #fff; /* Input text color */
 }
 
-.social a:hover {
-  color: var(--primary-color);
+.newsletter-form button {
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  background-color: #ffd700; /* Button background color */
+  color: #333; /* Button text color */
+  cursor: pointer; /* Add pointer cursor */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
-.options a {
-  margin-left: 20px;
-  color: var(--dark-color);
-  font-weight: 500;
-  transition: all 0.3s ease;
+.newsletter-form button:hover {
+  background-color: #444; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
 }
 
-.options a:hover {
-  color: var(--primary-color);
-}
-
-.current {
-  color: var(--primary-color);
-}
-
-/* Showcase */
-.showcase {
-  position: relative;
-  height: 400px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/stock-tradingBackground.jpg") center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-}
-
-.showcase h1 {
-  font-family: var(--headings-font);
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.showcase p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.showcase a {
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: 500;
-  border-radius: 25px;
-  transition: background-color 0.3s ease;
-}
-
-.showcase a:hover {
-  background-color: #0056b3; /* Darker shade of primary color */
-}
-
-/* Editor Picks */
-.editor-picks {
-  margin-top: 50px;
-}
-
-.editor-picks h2 {
-  font-family: var(--headings-font);
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.articles {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Categories */
-.categories {
-  margin-top: 50px;
-}
-
-.categories h2 {
-  font-family: var(--headings-font);
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.categories-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.category {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.category:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.category i {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.category p {
-  font-size: 1.2rem;
-}
-
-/* Footer */
-footer {
-  background-color: var(--dark-color);
-  color: #fff;
-  padding: 50px 0;
-  margin-top: 50px;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.footer h3 {
-  font-family: var(--headings-font);
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.footer h4 {
+  font-size: 20px; /* Font size for section titles */
+  margin-bottom: 10px; /* Add space below section titles */
 }
 
 .footer p {
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 16px; /* Font size for paragraphs */
 }
 
-.footer input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+.footer ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default list padding */
 }
 
-.footer button {
-  display: block;
-  width: 100%;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.footer ul li {
+  margin-bottom: 5px; /* Add space between list items */
 }
 
-.footer button:hover {
-  background-color: #0056b3; /* Darker shade of primary color */
+.footer ul li a {
+  color: #fff; /* Link text color */
+  text-decoration: none; /* Remove underline */
 }
+
+.footer ul li a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.footer .copyright {
+  text-align: center; /* Center align copyright text */
+  margin-top: 30px; /* Add space above copyright text */
+}
+
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
@@ -280,5 +247,273 @@ footer {
   .showcase p {
     font-size: 1rem;
   }
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.chatbot-messages {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#chatbot-input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px;
+  outline: none;
+  width: calc(100% - 24px); /* Adjust width accounting for padding and borders */
+}
+
+#search-area {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#stock-input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid var(--dark-color);
+}
+
+#search-area button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: rgb(138, 139, 158);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-area button:hover {
+  background-color: #0056b3; /* Darker shade of primary color */
+}
+
+#search-area {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#stock-input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#search-area button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-area button:hover {
+  background-color: #0056b3;
+}
+.nav-menu {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+
+footer {
+  position: relative; /* or 'absolute' if you want it always at the bottom */
+}
+
+
+    .flex-options{
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 20px;
+      color: var(--dark-color);
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+/* Style for the navigation bar */
+nav {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 10px 0; /* Add some padding */
+}
+
+.container0 {
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  color: #ffd700; /* Icon color */
+  margin-right: 10px; /* Add space between icon and text */
+}
+
+.logo h1 {
+  font-size: 24px; /* Font size */
+}
+
+.logo h1 span {
+  color: #ffd700; /* Text color for 'Pulse' */
+}
+
+.flex-options {
+  display: flex;
+}
+
+.flex-options a {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 0 15px; /* Add padding */
+  transition: color 0.5s; /* Smooth color transition */
+}
+
+.flex-options a:hover {
+  color: #ffd700; /* Change text color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container0 {
+    padding: 0 20px; /* Add padding to the container */
+  }
+
+  .logo h1 {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+
+  .flex-options {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column; /* Change flex direction for smaller screens */
+    position: absolute; /* Position links absolutely */
+    top: 60px; /* Position links below the navigation bar */
+    left: 0;
+    background-color: #333; /* Dark background color */
+    width: 100%;
+  }
+
+  .flex-options a {
+    padding: 10px 0; /* Add padding to each link */
+    border-bottom: 1px solid #fff; /* Add a border between links */
+  }
+
+  /* Show navigation links when the navigation icon is clicked */
+  nav .menu-icon:checked + .container0 .flex-options {
+    display: flex;
+  }
+}
+
+
+/* Style for searchResult  */
+body {
+  font-family: Arial, sans-serif;
+}
+.news-item {
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.news-title {
+  color: #007BFF;
+  font-size: 18px;
+  text-decoration: none;
+}
+.news-title:hover {
+  text-decoration: underline;
+}
+.news-meta {
+  font-size: 12px;
+  color: #666;
+}
+.news-description {
+  margin-top: 5px;
+}
+
+/* Style for news articles container */
+#news-articles {
+  display: flex; /* Use flexbox to display articles side by side */
+  flex-wrap: wrap; /* Allow articles to wrap to the next row if needed */
+  gap: 15px; /* Space between articles */
+}
+
+/* Style for each news article */
+.article {
+  flex: 1 0 calc(33.333% - 20px); /* Each article takes up 1/3 of the container width with 20px gap between them */
+  background-color: #fff; /* White background for each article */
+  color: #333; /* Dark grey color for text */
+  padding: 20px; /* Padding around each article */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0.05, 0.1, 0.1, 0.2); /* Subtle shadow for depth */
+}
+
+.article h2 {
+  font-size: 1.2em; /* Decrease font size for article titles */
+  margin-bottom: 10px; /* Space below title */
+  color: var(--primary-color); /* Match the color with other headings */
+}
+
+.article p {
+  font-size: 0.9em; /* Decrease font size for article content */
+  margin-bottom: 15px; /* Space below paragraphs */
+  line-height: 1.6; /* Increase line height for better readability */
+}
+
+.article img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below images */
+  border-radius: 4px; /* Rounded corners for images */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.article a {
+  color: var(--primary-color); /* Match link color with other components */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.article a:hover {
+  color: #0056b3; /* Darker shade of primary color on hover */
+  text-decoration: underline; /* Underline on hover for better interaction */
 }
 

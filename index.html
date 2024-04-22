@@ -11,89 +11,87 @@
     integrity="sha512-oIYT35X1eHTaFsxHAcC2/Oa5O+U+31CfTiE8/dRlGg7rjGmzimIwt94g3PWwV6cQU3oVk5T0mKGRK3kzw0zxcw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
 </head>
 
 <body>
-  <div class="preloader">
+  <!-- <div class="preloader">
     <div></div>
     <div>Loading Content!</div>
-  </div>
+  </div> -->
 
   <nav>
-    <div class="container">
-      <div class="logo">
+    <div class="container0">
+      <a href="./index.html" class="logo">
         <i class="fas fa-chart-line fa-3x"></i>
         <h1>Stock<span>Pulse</span></h1>
-      </div>
-
-
-      <div class="options">
+      </a>
+      <div class="flex-options">
         <a href="#" class="current">Home</a>
         <a href="./about.html">About</a>
         <a href="./contact.html">Contact</a>
       </div>
     </div>
   </nav>
+  
 
   <header class="showcase">
     <div class="container">
       <div class="text-content">
-        <p class="stock-category">Stocks</p>
         <h1>Latest Stock News and Analysis</h1>
         <p>
           Get the latest updates on stocks, market trends, and analysis to make informed investment decisions.
         </p>
-        <a href="./article.html">Read More</a>
+        <div id="search-area">
+          <input type="text" id="stock-input" placeholder="Enter Stock Name" aria-label="Stock Name">
+          <button onclick="searchStock()">Search</button>
+        </div>
       </div>
     </div>
   </header>
 
-  <section>
-    <div class="container">
-      <h1 class="editor-h1">Editor Picks</h1>
-      <div class="articles">
-        <a href="./article.html" class="card">ohn
-          <img src="./images/stocks/stock1.jpg" alt="">
-          <article>
-            <p class="stock-category">Stocks</p>
-            <h1>Top Stocks to Watch This Month</h1>
-            <p>
-              Discover the top stocks with potential for growth and high returns in the current market.
-            </p>
-          </article>
-        </a>
+  <div id="news-articles"></div>
 
-        <!-- Add more editor picks -->
 
+  <section class="categories2 top-gainers">
+    <div class="container2">
+      <h1 class="editor-h1">Top Gainers</h1>
+      <div id="top-gainers-container" class="collections-container gainers-container">
+        <!-- Trending stock names will be inserted here -->
       </div>
     </div>
   </section>
+  
+  
 
-  <section class="categories">
-    <div class="container">
-      <h1 class="editor-h1">Categories</h1>
-      <div class="categories-container">
-        <a href="./category.html" class="category">
-          <i class="fas fa-chart-line fa-4x"></i>
-          <p>Stocks</p>
-        </a>
-        <a href="./category.html" class="category">
-          <i class="fas fa-dollar-sign fa-4x"></i>
-          <p>Finance</p>
-        </a>
-        <a href="./category.html" class="category">
-          <i class="fas fa-globe fa-4x"></i>
-          <p>Global Markets</p>
-        </a>
-        <!-- Add more categories -->
-
+  <section class="categories2 Collections">
+    <div class="container2">
+      <h1 class="editor-h1">Collections</h1>
+      <div class="collections-container">
+        <div class="category">
+          <h2>Top Tech</h2>
+          <p>Explore the top technology companies.</p>
+        </div>
+        <div class="category">
+          <h2>Top Brands</h2>
+          <p>Discover the leading brands in the market.</p>
+        </div>
+        <div class="category">
+          <h2>By Market Cap</h2>
+          <p>View companies categorized by their market capitalization.</p>
+        </div>
+        <div class="category">
+          <h2>High Growth</h2>
+          <p>Discover companies with high growth potential.</p>
+        </div>
       </div>
     </div>
   </section>
   
 
   <footer>
-    <div class="container">
+    <div class="footer-container">
       <div class="footer">
         <article>
           <div class="logo">
@@ -104,31 +102,33 @@
             Stay updated with the latest news and analysis on stocks and financial markets.
           </p>
         </article>
-
+  
         <article>
           <h4>NEWSLETTER</h4>
           <p>Subscribe to our newsletter to receive updates on the latest trends and investment opportunities.</p>
-          <input type="email" placeholder="Enter Email...">
-          <button>Subscribe</button>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter Email..." required>
+            <button type="submit">Subscribe</button>
+          </form>
         </article>
-
+  
         <article>
           <h4>USEFUL LINKS</h4>
-          <p>Help & Support</p>
-          <p>Privacy Policy</p>
-          <p>About Us</p>
-          <p>Contact</p>
+          <ul>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </article>
-
-        <!-- Add more sections -->
-
       </div>
-
+  
       <div class="copyright">
         <p>Copyright &copy; 2024, Stock Pulse. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
+  
 
   <script src="./js/script.js"></script>
 </body>
