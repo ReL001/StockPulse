@@ -517,3 +517,62 @@ body {
   text-decoration: underline; /* Underline on hover for better interaction */
 }
 
+/* Trending Stocks Section */
+.top-gainers {
+  padding: 40px 0;
+  background-color: var(--light-grey-color);
+}
+
+.gainers-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.stock {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stock:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stock h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.stock h3 a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.stock h3 a:hover {
+  color: #0056b3;
+}
+
+.stock p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.stock img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .gainers-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
