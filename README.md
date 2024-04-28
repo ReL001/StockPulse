@@ -14,9 +14,6 @@ StockPulse is an open-source AI-powered platform designed to provide investors w
 
 To get started with StockPulse, simply sign up for an account on our website and start exploring the platform. You can customize your dashboard, set up personalized alerts, and access a wealth of information to help inform your investment decisions.
 
-## Support
-
-If you have any questions, feedback, or issues, please don't hesitate to contact our support team at support@stockpulse.com. We're here to help and are committed to providing you with the best possible experience on StockPulse.
 
 ## Disclaimer
 
