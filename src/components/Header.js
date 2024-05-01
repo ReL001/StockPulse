@@ -7,7 +7,7 @@ const Header = () => {
     <nav>
       <div className="container0">
         <Link to="/" className="logo">
-          <img src="/images/S_logo.png" alt="Stock Pulse Logo" className="logo-image" />
+          <img className="logo-image" />
           <h1>Stock<span>Pulse</span></h1>
         </Link>
         <div className="flex-options">
