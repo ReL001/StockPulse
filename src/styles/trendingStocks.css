@@ -40,3 +40,14 @@
     height: auto;
     border-radius: 5px;
   }
+  /* trendingStocks.css */
+
+.slide-up {
+  transform: translateY(0);
+  transition: transform 0.8s ease;
+}
+
+.hidden {
+  transform: translateY(100%);
+}
+

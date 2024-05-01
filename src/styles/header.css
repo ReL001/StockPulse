@@ -1,44 +1,73 @@
-/* Header Styles */
-header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem 0;
+/* header.css */
+
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for the navigation */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo styles */
+.logo {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+.logo span {
+  color: #f39c12; /* Adding some color contrast */
+}
+
+/* Navigation links */
+.flex-options {
+  display: flex;
+}
+
+.flex-options a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.flex-options a:hover {
+  color: #f39c12; /* Changing color on hover */
+}
+
+/* Adding some animation to the logo */
+.logo i {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  to {
+    transform: rotate(360deg);
   }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .logo i {
-    color: #007bff;
-    margin-right: 0.5rem;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin-left: 2rem;
-  }
-  
-  nav ul li a {
-    font-weight: 500;
-    color: #333;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #007bff;
-  }
+}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getTrendingStocks } from '../services/newsAPIService';
 import '../styles/trendingStocks.css';
 
-const TrendingStocks = () => {
+const TrendingStocks = ({ show }) => {
   const [trendingStocks, setTrendingStocks] = useState([]);
 
   useEffect(() => {
@@ -19,10 +19,10 @@ const TrendingStocks = () => {
   }, []);
 
   return (
-    <section className="categories2 top-gainers">
+    <section className={`trending-stocks ${show ? 'slide-up' : 'hidden'}`}>
       <div className="container2">
         <h1 className="editor-h1">Trending News</h1>
-        <div id="trending-stocks" className="collections-container gainers-container">
+        <div className="collections-container gainers-container">
           {trendingStocks.length === 0 ? (
             <p>No trending stocks found.</p>
           ) : (
