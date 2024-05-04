@@ -30,7 +30,8 @@
       <div class="flex-options">
         <a href="#" class="current">Home</a>
         <a href="/about">About</a>
-        <a href="./contact.html">Contact</a>
+        <a href="/contact">Contact</a>
+        <a href="/register">Register</a>
       </div>
     </div>
   </nav>
