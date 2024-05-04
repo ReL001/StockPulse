@@ -10,27 +10,26 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-oIYT35X1eHTaFsxHAcC2/Oa5O+U+31CfTiE8/dRlGg7rjGmzimIwt94g3PWwV6cQU3oVk5T0mKGRK3kzw0zxcw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b38ffb082e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div class="preloader">
+  <!-- <div class="preloader">
     <div></div>
     <div>Loading Content!</div>
-  </div>
+  </div> -->
 
   <nav>
-    <div class="container">
-      <div class="logo">
-        <i class="fas fa-chart-line fa-3x"></i>
+    <div class="container0">
+      <a href="/" class="logo">
+        <i class="fa-solid fa-chart-line"></i>
         <h1>Stock<span>Pulse</span></h1>
-      </div>
-
-
-      <div class="options">
-        <a href="./index.html">Home</a>
-        <a href="./about.html" class="current">About</a>
-        <a href="./contact.html">Contact</a>
+      </a>
+      <div class="flex-options">
+        <a href="#" class="current">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
       </div>
     </div>
   </nav>
