@@ -1,39 +1,33 @@
 import React, { useState } from 'react';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase/firebase'; // Ensure this path is correct and that the export matches
 
-const Login = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+const Login = ({ setIsLoggedIn }) => { // Ensure setIsLoggedIn is passed as prop if used
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO: Implement login logic
-    console.log('Login with email:', email, 'and password:', password);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        setIsLoggedIn(true); // Update login state
+        window.location.href = "/home"; // Use router for navigation instead of window.location
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
   };
 
   return (
     <div>
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
+      <h1>Login</h1>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email">Email</label>
+        <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <br />
+        <label htmlFor="password">Password</label>
+        <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <br />
         <button type="submit">Login</button>
       </form>
     </div>

@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import CreateAccount from './pages/CreateAccount';
 import Profile from './pages/Profile';
 import ProfileCircle from './components/ProfileCircle';
+import Firebase from './firebase/firebase';
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
