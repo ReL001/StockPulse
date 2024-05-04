@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-oIYT35X1eHTaFsxHAcC2/Oa5O+U+31CfTiE8/dRlGg7rjGmzimIwt94g3PWwV6cQU3oVk5T0mKGRK3kzw0zxcw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b38ffb082e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 </head>
@@ -22,13 +23,13 @@
 
   <nav>
     <div class="container0">
-      <a href="./index.html" class="logo">
-        <i class="fas fa-chart-line fa-3x"></i>
+      <a href="/" class="logo">
+        <i class="fa-solid fa-chart-line"></i>
         <h1>Stock<span>Pulse</span></h1>
       </a>
       <div class="flex-options">
         <a href="#" class="current">Home</a>
-        <a href="./about.html">About</a>
+        <a href="/about">About</a>
         <a href="./contact.html">Contact</a>
       </div>
     </div>
@@ -130,6 +131,7 @@
   
 
   <script src="./js/script.js"></script>
+  
 </body>
 
 </html>
