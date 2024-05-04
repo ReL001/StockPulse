@@ -1,12 +1,21 @@
 <?php  
 $request = $_SERVER['REQUEST_URI'];
 switch ($request) {
-     case '':
-	 case '/':
-    	require __DIR__ . '/home.php';
+    case '':
+    case '/':
+        require __DIR__ . '/home.php';
+        break;
+
+    case '/about':
+        require __DIR__ . '/about.php';
+        break;
+
+    case '/contact':
+        require __DIR__ . '/contact.php';
         break;
         
-     case '/about':
-    	require __DIR__ . '/about.php';
+    case '/register':
+        require __DIR__ . '/views/register.php';
+        break;
 }
 ?>
