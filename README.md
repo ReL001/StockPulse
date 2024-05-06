@@ -19,3 +19,10 @@ To get started with StockPulse, simply sign up for an account on our website and
 
 StockPulse is a financial information platform and does not provide investment advice. All information provided on StockPulse is for informational purposes only and should not be construed as investment advice or recommendations. Investors should conduct their own research and consult with a qualified financial advisor before making any investment decisions.
 
+
+## Contributors
+
+| Name    | Github Link       |
+| ------- | :----------------: |
+| Edzer   | [edsaur](https://github.com/edsaur) |
+
