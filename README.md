@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# StockPulse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+StockPulse is an open-source AI-powered platform designed to provide investors with comprehensive stock news, analysis, and research. Leveraging cutting-edge artificial intelligence algorithms, StockPulse delivers real-time market insights, empowering investors to make informed decisions and stay ahead of market trends.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **AI-Powered Insights:** Our platform utilizes advanced AI algorithms to aggregate, process, and analyze vast amounts of financial data from various sources.
+- **Real-Time Updates:** Stay informed with up-to-the-minute news, analysis, and research on stocks, sectors, and market trends.
+- **Personalized Alerts:** Customize alerts based on your preferences to receive notifications about important market events and developments.
+- **Interactive Charts:** Visualize stock performance, trends, and patterns with interactive charts and graphs.
+- **Comprehensive Coverage:** Access a wide range of stocks, indices, and markets, with in-depth analysis and research available for each.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get started with StockPulse, simply sign up for an account on our website and start exploring the platform. You can customize your dashboard, set up personalized alerts, and access a wealth of information to help inform your investment decisions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Disclaimer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+StockPulse is a financial information platform and does not provide investment advice. All information provided on StockPulse is for informational purposes only and should not be construed as investment advice or recommendations. Investors should conduct their own research and consult with a qualified financial advisor before making any investment decisions.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributors
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Name    | Github Link       |
+| ------- | :----------------: |
+| Edzer   | [edsaur](https://github.com/edsaur) |
