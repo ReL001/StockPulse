@@ -25,9 +25,10 @@ a {
 
 #registration-box {
     width: 50vw;
-    margin: 100px auto;
+    margin: 30px auto;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .logo {
@@ -171,16 +172,45 @@ h2, p {
     color: #8D8D8D;
 }
 
+#checkbox {
+    margin-top: 20px;
+}
+
 .mv-up{
     margin-top: -9px !important;
     margin-bottom: 8px !important;
 }
 
-.invalid-feedback{
+#invalid{
     color: #ff606e;
+    margin-top: 10px;
 }
 
 .valid-feedback{
    color: #2acc80;
 }
 
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 1200px) {
+    #registration-box {
+        width: 60%;
+    }
+}
+
+@media (max-width: 970px) {
+    #registration-box {
+        width: 80%;
+    }
+}
+
+
+
+/* For screens smaller than 576px (phones) */
+@media (max-width: 770px) {
+    #registration-box {
+        width: 90%;
+    }
+    .form-content .form-items {
+        min-width: unset;
+    }
+}
