@@ -17,12 +17,6 @@ html, body {
     background-color: #152733;
     overflow: hidden;
 }
-
-a {
-    color: #1b1a1a;
-    text-decoration: none;
-}
-
 #registration-box {
     width: 50vw;
     margin: 30px auto;
@@ -32,6 +26,8 @@ a {
 }
 
 .logo {
+    color: #f0f0f0;
+    text-decoration: none;
     display: flex;
     align-items: center;
     margin: 10px;
@@ -186,7 +182,7 @@ h2, p {
     margin-top: 10px;
 }
 
-.valid-feedback{
+#valid{
    color: #2acc80;
 }
 
