@@ -17,5 +17,9 @@ switch ($request) {
     case '/register':
         require __DIR__ . '/views/register.php';
         break;
+    
+    default:
+    http_response_code(404);
+    require __DIR__ . '404.php';
 }
 ?>
