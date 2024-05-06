@@ -1,0 +1,116 @@
+/* HomePage.css */
+
+/* General page styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Showcase area with background image and dark overlay */
+  .showcase {
+    position: relative;
+    background-image: url('../images/stock-tradingBackground.jpg'); /* Replace 'your-image-path.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: for fixed background image */
+    color: white;
+    height: 100vh; /* Cover full viewport height */
+    overflow: hidden;
+  }
+  
+  .showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay: black with 50% opacity */
+    z-index: 0;
+  }
+  
+  /* Container and text content styling to ensure text is above the overlay */
+  .container {
+    position: relative;
+    z-index: 1;
+    height: 100%; /* Ensure container covers full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-content {
+    text-align: center;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+  }
+  
+  .text-content p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* SearchBar styling, assuming basic styling is needed */
+  .search-bar {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 10px;
+  }
+  
+  .search-bar button {
+    width: 80px;
+    padding: 10px;
+    background: #ff9900;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background: #e68a00;
+  }
+  
+  /* NewsArticles and TrendingStocks container styling */
+  .news-articles, .trending-stocks {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .news-article, .trending-stock {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  
+  .news-article:last-child, .trending-stock:last-child {
+    border-bottom: none;
+  }
+  
+  /* Ensuring the layout is responsive */
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .text-content, .search-bar {
+      flex: 1;
+    }
+  }
+  
