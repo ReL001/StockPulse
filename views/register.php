@@ -29,7 +29,8 @@
                         <h3>Register Today</h3>
                         <p>Fill in the data below.</p>
                         <div class="invalid-feedback"></div>
-                        <form id="registration">
+                        <div class="valid-feedback"></div>
+                        <form id="registration" method="post" action="../processes/registration-process.php">
                             <input type="hidden" name="action" value="register">
                             <div class="col-md-12">
                                <input class="form-control" type="text" name="username" placeholder="Username">
@@ -40,13 +41,14 @@
                             </div>
 
                            <div class="col-md-12">
-                              <input class="form-control" type="password" name="password" placeholder="Password">
-                               <div class="valid-feedback">Password field is valid!</div>
+                              <input class="form-control" type="password" name="password" placeholder="Password" id="password">
+                              <input class="form-check-input" type="checkbox" name="checkPassword" value="" id="checkPassword">
+                              <label class="form-check-label">Show Password</label>
                            </div>
 
                         <div class="form-check" id="checkbox">
                           <input class="form-check-input" type="checkbox" name="checkbox" value="" id="invalidCheck">
-                          <label class="form-check-label">I confirm that all data are correct</label>
+                          <label class="form-check-label">I agree to the <a href="#">Terms and Conditions</a></label>
                         </div>
                   
 
