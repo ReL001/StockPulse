@@ -1,0 +1,29 @@
+/* SearchBar Styles */
+#search-area {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  #stock-input {
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  #search-area button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #search-area button:hover {
+    background-color: #0056b3;
+  }

@@ -25,4 +25,3 @@ StockPulse is a financial information platform and does not provide investment a
 | Name    | Github Link       |
 | ------- | :----------------: |
 | Edzer   | [edsaur](https://github.com/edsaur) |
-
