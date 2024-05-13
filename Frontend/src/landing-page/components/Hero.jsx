@@ -42,7 +42,7 @@ export default function Hero() {
               fontSize: 'clamp(3.5rem, 10vw, 4rem)',
             }}
           >
-            Our latest&nbsp;
+            Unlock Market&nbsp;
             <Typography
               component="span"
               variant="h1"
@@ -52,7 +52,7 @@ export default function Hero() {
                   theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
               }}
             >
-              products
+              Secrets
             </Typography>
           </Typography>
           <Typography
@@ -60,9 +60,8 @@ export default function Hero() {
             color="text.secondary"
             sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
           >
-            Explore our cutting-edge dashboard, delivering high-quality solutions
-            tailored to your needs. Elevate your experience with top-tier features
-            and services.
+            Transform Your Approach with Cutting-Edge AI Tools: 
+            Analyze Trends, Predict Market Movements, and Build a Winning Portfolio
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
@@ -76,15 +75,15 @@ export default function Hero() {
               hiddenLabel
               size="small"
               variant="outlined"
-              aria-label="Enter your email address"
-              placeholder="Your email address"
+              aria-label="Enter the name of stock to search"
+              placeholder="Search for a stock"
               inputProps={{
                 autoComplete: 'off',
-                'aria-label': 'Enter your email address',
+                'aria-label': 'Enter the name of stock to searc',
               }}
             />
             <Button variant="contained" color="primary">
-              Start now
+              Search
             </Button>
           </Stack>
           <Typography variant="caption" textAlign="center" sx={{ opacity: 0.8 }}>
