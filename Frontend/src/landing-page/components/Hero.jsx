@@ -60,8 +60,8 @@ export default function Hero() {
             color="text.secondary"
             sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
           >
-            Transform Your Approach with Cutting-Edge AI Tools: 
-            Analyze Trends, Predict Market Movements, and Build a Winning Portfolio
+            Cutting-Edge AI-Powered Platform for Comprehensive Stock Analysis: 
+            Gain Insights from Charts, Ratios, Company Performance, and More to Simplify Investment Decision-Making for You.
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}

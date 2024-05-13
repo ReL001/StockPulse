@@ -1,5 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
@@ -141,26 +142,29 @@ function AppAppBar({ mode, toggleColorMode }) {
               }}
             >
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
-              <Button
+              <SignedIn>
+                <UserButton 
                 color="primary"
                 variant="text"
                 size="small"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-in/"
-                target="_blank"
-              >
-                Sign in
-              </Button>
-              <Button
+                href="/material-ui/getting-started/templates/sign-in/"/>
+              </SignedIn >
+              <SignedOut>
+                <SignInButton 
                 color="primary"
                 variant="contained"
-                size="small"
+                size="medium"
                 component="a"
-                href="/material-ui/getting-started/templates/sign-up/"
-                target="_blank"
-              >
-                Sign up
-              </Button>
+                href="/material-ui/getting-started/templates/sign-up/">Sign In</SignInButton>
+              </SignedOut>
+              
+              {/* <SignedIn>
+              <UserButton />
+              </SignedIn>
+              <SignedOut>
+              <SignInButton />
+              </SignedOut> */}
             </Box>
             <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button
