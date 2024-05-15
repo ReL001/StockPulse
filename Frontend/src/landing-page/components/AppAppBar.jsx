@@ -144,19 +144,19 @@ function AppAppBar({ mode, toggleColorMode }) {
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
               <SignedIn>
                 <UserButton 
-                color="primary"
-                variant="text"
-                size="small"
-                component="a"
-                href="/material-ui/getting-started/templates/sign-in/"/>
+                  color="primary"
+                  variant="text"
+                  size="small"
+                  component="a"
+                  href="/material-ui/getting-started/templates/sign-in/"/>
               </SignedIn >
               <SignedOut>
                 <SignInButton 
-                color="primary"
-                variant="contained"
-                size="medium"
-                component="a"
-                href="/material-ui/getting-started/templates/sign-up/">Sign In</SignInButton>
+                  color="primary"
+                  variant="contained"
+                  size="medium"
+                  component="a"
+                  href="/material-ui/getting-started/templates/sign-up/">Sign In</SignInButton>
               </SignedOut>
               
               {/* <SignedIn>
