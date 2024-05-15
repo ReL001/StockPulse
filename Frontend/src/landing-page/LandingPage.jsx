@@ -54,12 +54,7 @@ function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
   );
 }
 
-ToggleCustomTheme.propTypes = {
-  showCustomTheme: PropTypes.shape({
-    valueOf: PropTypes.func.isRequired,
-  }).isRequired,
-  toggleCustomTheme: PropTypes.func.isRequired,
-};
+
 
 export default function LandingPage() {
   const [mode, setMode] = React.useState('light');
