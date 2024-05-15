@@ -42,7 +42,7 @@ export default function Hero() {
               fontSize: 'clamp(3.5rem, 10vw, 4rem)',
             }}
           >
-            Our latest&nbsp;
+            Unlocking Market&nbsp;
             <Typography
               component="span"
               variant="h1"
@@ -52,7 +52,7 @@ export default function Hero() {
                   theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
               }}
             >
-              products
+              Secrets
             </Typography>
           </Typography>
           <Typography
@@ -60,9 +60,9 @@ export default function Hero() {
             color="text.secondary"
             sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
           >
-            Explore our cutting-edge dashboard, delivering high-quality solutions
-            tailored to your needs. Elevate your experience with top-tier features
-            and services.
+            Embark on a journey of discovery as we unveil the secrets of the market. 
+            Our platform equips you with the tools and knowledge needed to navigate complex market dynamics, 
+            seize profitable opportunities, and build a prosperous financial future.
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
@@ -76,19 +76,19 @@ export default function Hero() {
               hiddenLabel
               size="small"
               variant="outlined"
-              aria-label="Enter your email address"
-              placeholder="Your email address"
+              aria-label="Enter the company name or symbol to see the magic"
+              placeholder="Enter the company name or symbol"
               inputProps={{
                 autoComplete: 'off',
-                'aria-label': 'Enter your email address',
+                'aria-label': 'Enter the company name or symbol to see the magic',
               }}
             />
             <Button variant="contained" color="primary">
-              Start now
+              Search
             </Button>
           </Stack>
           <Typography variant="caption" textAlign="center" sx={{ opacity: 0.8 }}>
-            By clicking &quot;Start now&quot; you agree to our&nbsp;
+            By clicking &quot;Search&quot; you agree to our&nbsp;
             <Link href="#" color="primary">
               Terms & Conditions
             </Link>
