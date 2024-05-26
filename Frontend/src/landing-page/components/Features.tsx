@@ -16,28 +16,40 @@ import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
 const items = [
   {
     icon: <ViewQuiltRoundedIcon />,
-    title: 'Dashboard',
+    title: 'AI-Driven Insights',
     description:
-      'This item could provide a snapshot of the most important metrics or data points related to the product.',
+      `Our advanced AI algorithms distill complex financial data into clear, actionable insights. 
+      This allows investors to quickly understand the key factors impacting a stock's performance without getting bogged down in technical details.`,
     imageLight: 'url("/static/images/templates/templates-images/dash-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
   },
   {
     icon: <EdgesensorHighRoundedIcon />,
-    title: 'Mobile integration',
+    title: 'Predictive Analytics',
     description:
-      'This item could provide information about the mobile app version of the product.',
+      `Utilize AI-driven predictive analytics to anticipate market movements and stock performance. 
+      Our algorithms analyze historical data and current market conditions to provide forecasts, helping investors stay ahead of the curve.`,
     imageLight: 'url("/static/images/templates/templates-images/mobile-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/mobile-dark.png")',
   },
   {
     icon: <DevicesRoundedIcon />,
-    title: 'Available on all platforms',
+    title: 'Risk Assessment',
     description:
-      'This item could let users know the product is available on all platforms, such as web, mobile, and desktop.',
+      `Evaluate the potential risks associated with investments using AI-driven risk assessment tools. 
+      Our platform offers a clear understanding of volatility, financial stability, and other risk factors, ensuring well-informed investment choices.`,
     imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
   },
+  // {
+  //   icon: <DevicesRoundedIcon />,
+  //   title: 'Risk Assessment',
+  //   description:
+  //     `Evaluate the potential risks associated with investments using AI-driven risk assessment tools. 
+  //     Our platform offers a clear understanding of volatility, financial stability, and other risk factors, ensuring well-informed investment choices.`,
+  //   imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
+  //   imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
+  // },
 ];
 
 export default function Features() {
@@ -55,16 +67,16 @@ export default function Features() {
         <Grid item xs={12} md={6}>
           <div>
             <Typography component="h2" variant="h4" color="text.primary">
-              Product features
+              StockPulse features
             </Typography>
             <Typography
               variant="body1"
               color="text.secondary"
               sx={{ mb: { xs: 2, sm: 4 } }}
             >
-              Here you can provide a brief overview of the key features of the
-              product. For example, you could list the number of features, the types
-              of features, add-ons, or the benefits of the features.
+              Here you can find a brief overview of the key features of StockPulse, 
+              including the number of features, types of features, 
+              and the benefits they provide to investors.
             </Typography>
           </div>
           <Grid container item gap={1} sx={{ display: { xs: 'auto', sm: 'none' } }}>

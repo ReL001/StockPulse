@@ -15,39 +15,39 @@ import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
 const items = [
   {
     icon: <SettingsSuggestRoundedIcon />,
-    title: 'Adaptable performance',
+    title: 'AI-Driven Insights',
     description:
-      'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+      'Our platform leverages advanced AI to provide precise and actionable stock analysis, enhancing your decision-making process.',
   },
   {
     icon: <ConstructionRoundedIcon />,
-    title: 'Built to last',
+    title: 'Comprehensive Data Access',
     description:
-      'Experience unmatched durability that goes above and beyond with lasting investment.',
+      'Access all the essential stock-related information in one place, from financial metrics to the latest news and events.',
   },
   {
     icon: <ThumbUpAltRoundedIcon />,
-    title: 'Great user experience',
+    title: 'Efficient Performance',
     description:
-      'Integrate our product into your routine with an intuitive and easy-to-use interface.',
+      'StockPulse adapts to your investment needs, streamlining your research and boosting your efficiency.',
   },
   {
     icon: <AutoFixHighRoundedIcon />,
-    title: 'Innovative functionality',
+    title: 'Simplified Analysis',
     description:
-      'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
+      'Designed for everyone, StockPulse provides easy-to-understand analysis, making stock market insights accessible even for those without deep technical knowledge.',
   },
   {
     icon: <SupportAgentRoundedIcon />,
     title: 'Reliable support',
     description:
-      'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
+      'Rely on our dedicated customer support team for assistance that extends beyond your purchase, ensuring you have the help you need when you need it.',
   },
   {
     icon: <QueryStatsRoundedIcon />,
     title: 'Precision in every detail',
     description:
-      'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
+      'Enjoy a meticulously crafted platform where small touches, such as detailed analytics and seamless navigation, make a significant impact on your overall investing experience.',
   },
 ];
 
@@ -81,9 +81,8 @@ export default function Highlights() {
             Highlights
           </Typography>
           <Typography variant="body1" sx={{ color: 'grey.400' }}>
-            Explore why our product stands out: adaptability, durability,
-            user-friendly design, and innovation. Enjoy reliable customer support and
-            precision in every detail.
+          Explore why StockPulse stands out: adaptability, reliability, user-friendly design, and innovation. 
+          Enjoy dependable customer support and precision in every detail.
           </Typography>
         </Box>
         <Grid container spacing={2.5}>
