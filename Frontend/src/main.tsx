@@ -15,6 +15,7 @@ import SignUpPage from './routes/sign-up'
 import DashboardPage from './routes/dashboard'
 import InvoicesPage from './routes/dashboard.invoices'
 import LandingPage from './landing-page/LandingPage'
+import ResultPage from './landing-page/ResultPage'
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,8 @@ const router = createBrowserRouter([
           { path: "/dashboard", element: <DashboardPage /> },
           { path: "/dashboard/invoices", element: <InvoicesPage /> }
         ]
-      }
+      },
+      { path: "/result", element: <ResultPage /> }
     ]
   }
 ])

@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useState } from 'react';
+// import { useHistory } from 'react-router-dom';
 import { alpha } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -9,6 +10,19 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
 export default function Hero() {
+  const [symbol, setSymbol] = useState('');
+  // const history = useHistory();
+
+  const handleSearch = async () => {
+    try {
+      const response = await fetch(`/api/stock?symbol=${symbol}`);
+      const data = await response.json();
+      // history.push('/result', { stockData: data });
+    } catch (error) {
+      console.error('Error fetching stock data:', error);
+    }
+  };
+
   return (
     <Box
       id="hero"
@@ -78,22 +92,17 @@ export default function Hero() {
               variant="outlined"
               aria-label="Enter the company name or symbol to see the magic"
               placeholder="Enter the company name or symbol"
+              value={symbol}
+              onChange={(e) => setSymbol(e.target.value)}
               inputProps={{
                 autoComplete: 'off',
                 'aria-label': 'Enter the company name or symbol to see the magic',
               }}
             />
-            <Button variant="contained" color="primary">
+            <Button variant="contained" color="primary" onClick={handleSearch}>
               Search
             </Button>
           </Stack>
-          <Typography variant="caption" textAlign="center" sx={{ opacity: 0.8 }}>
-            By clicking &quot;Search&quot; you agree to our&nbsp;
-            <Link href="#" color="primary">
-              Terms & Conditions
-            </Link>
-            .
-          </Typography>
         </Stack>
         <Box
           id="image"
@@ -104,7 +113,7 @@ export default function Hero() {
             width: '100%',
             backgroundImage:
               theme.palette.mode === 'light'
-                ? 'url("/static/images/templates/templates-images/hero-light.png")'
+                ? 'url("../res/_1d9f166e-e2b9-488c-9a5c-3234e397db45.jpg")'
                 : 'url("/static/images/templates/templates-images/hero-dark.png")',
             backgroundSize: 'cover',
             borderRadius: '10px',
